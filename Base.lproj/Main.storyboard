@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="knd-aX-eE6">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="N9Z-gA-LX1">
+            <objects>
+                <navigationController storyboardIdentifier="BaseViewNavi" id="knd-aX-eE6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uoa-7g-VeL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KXT-s5-U2a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="quF-nY-iZl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-229" y="355"/>
+        </scene>
+        <!--Words Counter View Controller-->
+        <scene sceneID="07N-rT-wi8">
+            <objects>
+                <viewController storyboardIdentifier="WordsCounterViewController" id="1me-zi-odn" customClass="WordsCounterViewController" customModule="WordCounterAssistantTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dd8-y8-Jw3"/>
+                        <viewControllerLayoutGuide type="bottom" id="E7k-XJ-c4D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ksN-T9-f8b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoslaunch" translatesAutoresizingMaskIntoConstraints="NO" id="uYc-9h-ryN">
+                                <rect key="frame" x="67" y="213" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="RwF-bi-HBr"/>
+                                    <constraint firstAttribute="width" constant="240" id="Wfx-kr-biD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uYc-9h-ryN" firstAttribute="top" secondItem="Dd8-y8-Jw3" secondAttribute="bottom" constant="213" id="Hq2-a1-dtl"/>
+                            <constraint firstItem="uYc-9h-ryN" firstAttribute="leading" secondItem="ksN-T9-f8b" secondAttribute="leading" constant="67" id="U9Y-yo-q3r"/>
+                            <constraint firstAttribute="trailing" secondItem="uYc-9h-ryN" secondAttribute="trailing" constant="68" id="iLp-IY-qhc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logoLaunchImg" destination="uYc-9h-ryN" id="Z7d-aQ-ebf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fwl-B3-1RM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226" y="1028"/>
+        </scene>
+        <!--Info Tabel View Controller-->
+        <scene sceneID="VCp-wf-xwe">
+            <objects>
+                <tableViewController id="m2F-Fq-feN" customClass="InfoTabelViewController" customModule="WordCounterAssistantTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="2W8-U1-5LM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InfoCell" textLabel="5xo-5M-mKs" detailTextLabel="svi-kY-Wks" style="IBUITableViewCellStyleSubtitle" id="CDi-Mp-gkI">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CDi-Mp-gkI" id="aMH-0a-h5Z">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5xo-5M-mKs">
+                                            <rect key="frame" x="16" y="6" width="31.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="svi-kY-Wks">
+                                            <rect key="frame" x="16" y="25.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="m2F-Fq-feN" id="BFp-CO-6EP"/>
+                            <outlet property="delegate" destination="m2F-Fq-feN" id="rqs-tu-Ow7"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WDt-kA-Qcw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1115" y="355"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="mainViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="WordCounterAssistantTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="whe-qS-vlc">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="whe-qS-vlc" secondAttribute="trailing" id="7NN-gP-3eL"/>
+                            <constraint firstItem="whe-qS-vlc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ML8-vg-AeU"/>
+                            <constraint firstItem="whe-qS-vlc" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="YjS-R0-sHV"/>
+                            <constraint firstItem="whe-qS-vlc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sbe-wf-gKm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bK1-6I-0cD"/>
+                    <connections>
+                        <outlet property="tv" destination="whe-qS-vlc" id="4DC-LA-prO"/>
+                        <segue destination="m2F-Fq-feN" kind="show" identifier="goInfo" id="hVb-HZ-tC8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448" y="355"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logoslaunch" width="1024" height="1024"/>
+    </resources>
+</document>

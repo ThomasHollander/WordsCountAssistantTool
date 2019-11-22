@@ -1,0 +1,132 @@
+/* 
+  Localizable.strings
+  WordCounter
+
+  Created by Arefly on 14/7/2015.
+  Copyright (c) 2015 Arefly. All rights reserved.
+*/
+
+Global.Text.ShareMessage = "Hi! Still counting words one by one? Get Word Counter Tools on App Store today!";
+Global.Text.NothingOnClipboard = "Nothing on your clipboard!";
+
+Global.ProgressingHUD.Label.Counting = "Counting...";
+
+Global.TextView.PlaceHolder.Text = "Type or paste here...";
+
+Global.TextView.MenuItem.Count = "Count...";
+
+Global.Button.Done = "Done";
+Global.Button.OK = "OK";
+Global.Button.Yes = "Yes";
+Global.Button.Close = "Close";
+Global.Button.Clear = "Clear";
+
+Global.Button.EditText = "Edit text";
+
+Global.Units.Word.Singular = "word";
+Global.Units.Word.Plural = "words";
+
+Global.Units.Short.Word.Singular = "word";
+Global.Units.Short.Word.Plural = "words";
+
+Global.Units.Character.Singular = "character";
+Global.Units.Character.Plural = "characters";
+
+Global.Units.Short.Character.Singular = "char.";
+Global.Units.Short.Character.Plural = "chars.";
+
+Global.Units.Paragraph.Singular = "paragraph";
+Global.Units.Paragraph.Plural = "paragraphs";
+
+Global.Units.Short.Paragraph.Singular = "para.";
+Global.Units.Short.Paragraph.Plural = "paras.";
+
+Global.Units.Sentence.Singular = "sentence";
+Global.Units.Sentence.Plural = "sentences";
+
+Global.Count.Text.Word = "%1$@ %2$@";
+Global.Count.Text.Character = "%1$@ %2$@";
+Global.Count.Text.Sentence = "%1$@ %2$@";
+Global.Count.Text.Paragraph = "%1$@ %2$@";
+
+Global.Alert.Counter.Title = "Counter";
+Global.Alert.Counter.Content.Word = "Words: %@";
+Global.Alert.Counter.Content.Character = "Characters: %@";
+Global.Alert.Counter.Content.Sentence = "Sentences: %@";
+Global.Alert.Counter.Content.Paragraph = "Paragraphs: %@";
+
+
+Global.Alert.BeforeClear.Title = "Clear all content?";
+Global.Alert.BeforeClear.Content = "WARNING: This action is irreversible!";
+
+Global.Alert.BeforeReplaceTextViewToClipboard.Title = "Replace current contents with clipboard contents?";
+Global.Alert.BeforeReplaceTextViewToClipboard.Content = "NOTICE: This action is irreversible!";
+
+
+Global.Alert.PlzRate.Title = "Thanks!";
+Global.Alert.PlzRate.Content = "You have used Word Counter Tools for %d times! Love it? Can you take a second to rate our app?";
+Global.Alert.PlzRate.Button.Yes = "Sure!";
+Global.Alert.PlzRate.Button.Later = "Not now";
+Global.Alert.PlzRate.Button.Cancel = "No, thanks!";
+
+Global.Alert.PlzRateUpdate.Title = "Thanks for update!";
+Global.Alert.PlzRateUpdate.Content = "You have used Word Counter Tools for %1$d times since you updated to Version %2$@! Love this update? Can you take a second to rate our app?";
+Global.Alert.PlzRateUpdate.Button.Yes = "Sure!";
+Global.Alert.PlzRateUpdate.Button.Later = "Not now";
+Global.Alert.PlzRateUpdate.Button.Cancel = "No for this version, thanks!";
+
+
+Main.NavBar.Title = "Word Counter";
+
+
+About.NavBar.Title = "About";
+
+About.Title.Text.Version = "Version %@";
+About.Subtitle.Text.Build = "Build %@";
+
+About.Alert.ShowGithub.Title = "You are now a developer!";
+About.Alert.ShowGithub.Content = "Open the repository of Word Counter Tools on GitHub?";
+
+About.Alert.Donate.Title = "Donate to developer Arefly! :)";
+About.Alert.Donate.Content = "Your support is our motivation to keep working on Word Counter Tools and give you a better app!\nTo thank you for your support, the ad in app will be hidden once after your donation! :)";
+About.Alert.Donate.Button.Donate = "Donate $%d US!";
+About.Alert.Donate.Button.Restore = "(Restore purchases)";
+
+About.Alert.DonateSuccess.Title = "Thank you!";
+About.Alert.DonateSuccess.Content = "We have received your donation!\nAd is hidden now! :)";
+
+About.Alert.RestoreSuccess.Title = "Thank you!";
+About.Alert.RestoreSuccess.Content = "Your donation was restored!\nAd is hidden now! :)";
+
+About.Alert.IapDisabledAlert.Title = "IAP is not allowed!";
+About.Alert.IapDisabledAlert.Content = "Please enable in-app purchases in Settings app.";
+About.Alert.IapDisabledAlert.Button.OpenSettings = "Open Settings";
+
+About.Table.Section0.Content = "Share Word Counter Tools!||--Rate on App Store!||";
+//--Other Apps by Arefly||--Donate & Remove ad :)||
+About.Table.Section1.Content = "Thomas Wynn||Developer--ThomasWynn@gmail.com||Email--%1$@||%2$@";
+
+About.Table.Header.Content = "--About";
+About.Table.Footer.Content = "--© %@ Thomas Wynn";
+
+
+Welcome.Global.Button.Skip = "Skip";
+
+Welcome.Global.Title.About = "Thanks!";
+Welcome.Global.Text.About = "We promise to keep working on Word Counter Tools.\nIf you have any questions or suggestions for this app,\nfeel free to contact Arefly at eflyjason@gmail.com.\nWe will try our best. Thanks! :)";
+
+/***** VERSION 1.1-1.3 *****/
+"Welcome.Version.1-1.Text.TodayWidget.Introduction" = "NEW: Check how many words is there in your clipboard using Today Widget inside Notification Centre!";
+"Welcome.Version.1-1.Text.TodayWidget.How" = "Add widget by \"Edit\" button in Today view";
+"Welcome.Version.1-1.Text.TooManyCharacter" = "If characters is larger than 1500, Word Counter Tools will automatically change to manual mode in order to prevent the serious lag.";
+
+/***** VERSION 1.3-NOW *****/
+"Welcome.Version.1-3.Title.ActionExtension.Introduction" = "Action Extension";
+"Welcome.Version.1-3.Title.ActionExtension.How" = "Action Extension";
+"Welcome.Version.1-3.Title.MoreCountingType" = "Counting sentences";
+"Welcome.Version.1-3.Title.ImproveTodayWidget" = "Today Widget";
+
+"Welcome.Version.1-3.Text.ActionExtension.Introduction" = "NEW: Check how many words is there by using Action Extension in Share menu!";
+"Welcome.Version.1-3.Text.ActionExtension.How" = "Add extension by \"Share...\" button in text menu.";
+"Welcome.Version.1-3.Text.MoreCountingType" = "NEW: You can now check how many sentences is there!\nPress Result Button (i.e. \"n words\") for detail counting result";
+"Welcome.Version.1-3.Text.ImproveTodayWidget" = "Improved Today Widget.\nTry it now!";
